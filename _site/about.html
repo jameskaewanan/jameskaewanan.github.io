@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/assets/css/main.css"><html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+</head>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+  <meta name="description" content="Test">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" >
+</head>
+
+
+<div class="navbar">
+  <a href="../contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="../about"><i class="fa fa-fw fa-user"></i> About Me</a>
+  <a href="../projects"><i class="fa fa-fw fa-folder"></i> Projects</a>
+  <a href="../index"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="navbar_left">
+    <a href="../index"><i class="navbar_left" ></i> JAMES KAEWANAN</a>
+  </div>
+</div>
+
+<body>
+
+<div class="banner" style="text-align: center; ">
+  <div>
+    <img src="../assets/images/temp-pfp.jpeg" alt="Avatar" class="pfp_about">
+  </div>
+  <h1 style="color: #FFFFFF; font-family: 'Helvetica', sans-serif; font-weight: bolder">ABOUT ME</h1>
+</div>
+
+
+<!--
+
+<footer>
+    <div class="footer">
+        <div class="footer_about">
+            <h3 style="color: #FFFFFF">About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid, inventore veritatis, a beatae asperiores eveniet ex repudiandae voluptatibus tempora, optio nam harum temporibus tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae dolore molestiae quis iste.</p>
+        </div>
+        <div class="footer_main">
+            <h3 style="color: #FFFFFF">Quick Links</h3>
+            <a href="../index"><i class="icon fa fa-home"> Home</i></a>
+            <a href="../projects"><i class="icon fa fa-folder"> Projects</i></a>
+            <a href="../about"><i class="icon fa fa-user"> About Me</i></a>
+            <a href="../contact"><i class="icon fa fa-envelope"> Contact</i></a>
+        </div>
+        <div class="footer_main">
+            <h3 style="color: #FFFFFF">Social Media</h3>
+            <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/james_kwn/"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+            <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/jameskwnn/"><i class="fa fa-linkedin-square" aria-hidden="true"> LinkedIn</i></a>
+            <a aria-label="My Github" target="_blank" href="https://github.com/jameskaewanan"><i class="fa fa-github-alt" aria-hidden="true"> Github</i></a>
+            <a aria-label="My YouTube" target="_blank" href="https://www.youtube.com/channel/UCG_k5n_DKJB8iItKeY6h-lQ"><i class="fa fa-youtube-play" aria-hidden="true"> YouTube</i></a>
+        </div>
+        <br>
+    </div>
+    <div class="copyright">
+        Copyright © 2022 All Rights Reserved by James Kaewanan.
+    </div>
+</footer>
+
+
+
+
+-->
+<div class="footer-basic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <footer>
+        <div class="social">
+            <a target="_blank" href="https://www.instagram.com/james_kwn/"><i class="icon ion-social-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jameskwnn/"><i class="icon ion-social-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/jameskaewanan"><i class="icon ion-social-github"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCG_k5n_DKJB8iItKeY6h-lQ"><i class="icon ion-social-youtube"></i></a>
+
+            <ul class="row" style="justify-content: center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"></a></li>
+
+            </ul>
+        </div>
+        <p class="copyright">Designed and Developed by James Kaewanan</p>
+    </footer>
+</div>
+
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
+
+
+<style>
+
+  .pfp_about {
+    margin-top: 190px;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 75%;
+  }
+
+  .banner {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 100, 144, 0.5), rgba(0, 100, 144, 0.5)), url("../assets/images/banner.png");
+    background-size: cover;
+    height: 700px;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    float: right;
+    background-color: rgba(6, 61, 85, 1);
+  }
+
+  .navbar_left {
+    font-weight: bold;
+    float: left;
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: right;
+    display: inline;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+  }
+
+
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    color: #555555;
+  }
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+</style>

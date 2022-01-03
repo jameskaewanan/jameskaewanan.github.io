@@ -1,0 +1,44 @@
+/* Style the navigation bar */
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    float: right;
+    background-color: rgba(38, 164, 221, 0);
+}
+
+.navbar_left {
+    font-weight: bold;
+    float: left;
+}
+
+/* Navbar links */
+.navbar a {
+    float: right;
+    display: inline;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    color: #555555;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: $main;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
