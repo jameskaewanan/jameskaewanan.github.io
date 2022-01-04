@@ -1,12 +1,12 @@
 # Site Settings
-title: "" # the name of your site, e.g. ACME Corp.
+title: "James Kaewanan" # the name of your site, e.g. ACME Corp.
 description: Test
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # User settings
 username: James Kaewanan
-user_description: I have been studying Computer Science for 7+ Years and within that time have gained valuable experiences and knowledge regarding the field. Although Programming has been a huge part of my academic and personal life, I also have many hobbies and interests which I have realized into creative projects. This website acts as a brief documentation of all of those projects.
+user_description: My name is James Kaewanan. I have been studying Computer Science for 7+ Years and within that time have gained valuable experiences and knowledge regarding this field. Although Programming has been a huge part of my academic and personal life, I also have many hobbies and interests which I have realized into creative projects. This website is a brief portfolio to showcase my experiences and projects.
 user_title: A Personal Portfolio
 email: jameskwnn@gmail.com
 twitter_username: derpnshire

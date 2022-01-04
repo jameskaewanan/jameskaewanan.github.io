@@ -1,0 +1,14 @@
+.img_card {
+  display: flex;
+  margin: 70px auto 0 auto;
+  width: 1400px;
+  height: 350px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 5px -1px;
+}
+
+@media ( max-width: 1400px) {
+  .img_card {
+    display: none;
+  }
+}

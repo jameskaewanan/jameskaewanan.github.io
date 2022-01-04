@@ -1,6 +1,6 @@
 #about {
   font-size: 120%;
-  
+
   width: 100%;
   margin: 0 auto;
   max-width: 1400px;
@@ -13,13 +13,6 @@
   }
 }
 
-.tech {
-  margin: 10px;
-  flex: 1 1 0;
-  h2, h3 {
-    font-weight: 400;
-  }
-}
 
 .user {
   text-align: center;
@@ -37,33 +30,24 @@
   }
 }
 
-.user-details {
-  text-align: left;
-  margin: 5px;
-  h1 {
-    font-weight: 400;
-  }
-}
-
 .pfp {
-  margin-top: auto;
-  margin-left: 50px;
-  justify-content: center;
-  object-fit: cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 75%;
+  margin: auto 50px auto auto;
+  width: auto;
+  height: 500px;
+  border-radius: 25px;
 }
 
-.row {
+.column_about {
+}
+
+.row_about {
   display: flex;
-}
-
-.column {
+  padding-top: 80px;
+  flex-direction: row;
 }
 
 .button {
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #555;
   border: none;
   color: #FFFFFF;
@@ -80,13 +64,11 @@
 .button span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
   transition: 0.5s;
 }
 
 .button span:after {
   content: '\00bb';
-  position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
@@ -114,10 +96,21 @@
   text-align: center;
   margin: 5px auto 50px;
   font-size: 120%;
-  max-width: 100%;
-  width: auto;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
+  max-width: 80%;
+
+}
+
+@media ( max-width: 800px ) {
+  .row_about {
+    flex-direction: column;
+  }
+  .column_about {
+    justify-content: center;
+    text-align: center;
+  }
+  .pfp {
+    margin: auto;
   }
 }
+
 
