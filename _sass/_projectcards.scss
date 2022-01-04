@@ -4,19 +4,14 @@
   justify-content: center;
   margin: 0 0 40px 0;
   flex-direction: row;
-}
 
-.row_project:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .column_project {
   margin: 0 40px 40px 40px;
   max-width: 100%;
-
 }
+
 
 .card {
   border-radius: 20px;
@@ -84,6 +79,18 @@
   .row_project {
     width: 100%;
     display: block;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .column_project {
+    margin: 40px 0 0 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .row_project {
+    width: 100%;
     margin-bottom: 20px;
     flex-direction: column;
   }

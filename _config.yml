@@ -1,6 +1,6 @@
 # Site Settings
 title: "James Kaewanan" # the name of your site, e.g. ACME Corp.
-description: Test
+description: Hi, I'm James. A computer science student of 7+ years. Welcome to my online portfolio.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -11,4 +11,3 @@ user_title: A Personal Portfolio
 email: jameskwnn@gmail.com
 twitter_username: derpnshire
 github_username:  jameskaewanan
-# gplus_username:  lorem_ipsum
