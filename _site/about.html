@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>James Kaewanan</title>
-  <meta name="description" content="Test">
+  <meta name="description" content="Hi, I'm James. A computer science student of 7+ years. Welcome to my online portfolio.">
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" >
@@ -32,11 +32,21 @@
 <body>
 
 <div class="banner" style="text-align: center; ">
-  <div>
-    <img src="../assets/images/temp-pfp.jpeg" alt="Avatar" class="pfp_about">
-  </div>
-  <h1 style="color: #FFFFFF; font-family: 'Helvetica', sans-serif; font-weight: bolder">ABOUT ME</h1>
+  <h1 class="banner_text">ABOUT ME</h1>
 </div>
+
+<div class="text">
+<div class="row_about">
+  <div class="column_about">
+    <img src="../assets/images/profile.png" alt="Avatar" class="pfp">
+  </div>
+  <div class="column_about">
+    <h1>Hi I'm James. Nice To Meet You</h1>
+    <p>My name is James Kaewanan. I have been studying Computer Science for 7+ Years and within that time have gained valuable experiences and knowledge regarding this field. Although Programming has been a huge part of my academic and personal life, I also have many hobbies and interests which I have realized into creative projects. This website is a brief portfolio to showcase my experiences and projects.</p>
+  </div>
+</div>
+</div>
+
 
 
 <!--
@@ -83,10 +93,10 @@
             <a target="_blank" href="https://www.youtube.com/channel/UCG_k5n_DKJB8iItKeY6h-lQ"><i class="icon ion-social-youtube"></i></a>
 
             <ul class="row_footer" style="justify-content: center">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index">Home</a></li>
+                <li><a href="../projects">Projects</a></li>
+                <li><a href="../about">About Me</a></li>
+                <li><a href="../contact">Contact</a></li>
                 <li><a href="#"></a></li>
 
             </ul>
@@ -106,29 +116,30 @@
 
 <style>
 
-  .pfp_about {
-    margin-top: 190px;
-    object-fit: cover;
-    width: 250px;
-    height: 250px;
-    border-radius: 75%;
-  }
-
   .banner {
     /* The image used */
     background-image: linear-gradient(rgba(0, 100, 144, 0.5), rgba(0, 100, 144, 0.5)), url("../assets/images/banner.png");
     background-size: cover;
-    height: 700px;
+    height: 400px;
+    position: relative;
+  }
+
+  .banner_text {
+    color: #FFFFFF;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    margin-top: 0;
+    text-align: center;
+    align-content: center;
   }
 
   /* Style the navigation bar */
   .navbar {
-    position: absolute;
     z-index: 9999;
     width: 100%;
-    top: 0;
     float: right;
-    background-color: rgba(6, 61, 85, 1);
+    position: relative;
   }
 
   .navbar_left {
@@ -159,4 +170,20 @@
       display: block;
     }
   }
+
+  .row_about_page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column_about_page {
+  }
+
+  .text {
+    text-align: center;
+    margin: 5px auto 50px;
+    font-size: 120%;
+    max-width: 80%;
+  }
+
 </style>

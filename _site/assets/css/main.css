@@ -2264,7 +2264,7 @@ h1 { color: #063D55; }
 
 .text { text-align: center; margin: 5px auto 50px; font-size: 120%; max-width: 80%; }
 
-@media (max-width: 800px) { .row_about { flex-direction: column; } .column_about { justify-content: center; text-align: center; } .pfp { margin: auto; } }
+@media (max-width: 1350px) { .row_about { flex-direction: column; } .column_about { justify-content: center; text-align: center; } .pfp { margin: auto; } }
 
 .footer-basic { padding: 40px 0; background-color: #ffffff; color: #4b4c4d; }
 
@@ -2327,9 +2327,7 @@ h1 { color: #063D55; }
 
 @media screen and (max-width: 1400px) { .row_project { width: 100%; margin-bottom: 20px; flex-direction: column; } .column_project { margin: 40px 0 0 0; justify-content: center; text-align: center; } }
 
-.img_card { display: flex; margin: 70px auto 0 auto; width: 1400px; height: 350px; border-radius: 25px; box-shadow: 0px 3px 5px -1px; }
-
-@media screen and (max-width: 1450px) { .img_card { display: none; } }
+.img_card { display: flex; margin: 70px auto; width: 100%; height: auto; border-radius: 25px; box-shadow: 0px 3px 5px -1px; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea { width: 100%; /* Full width */ padding: 12px; /* Some padding */ border: 1px solid #ccc; /* Gray border */ border-radius: 4px; /* Rounded borders */ box-sizing: border-box; /* Make sure that padding and width stays in place */ margin-top: 6px; /* Add a top margin */ margin-bottom: 16px; /* Bottom margin */ resize: vertical; }
