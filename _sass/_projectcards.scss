@@ -23,6 +23,7 @@
   0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   background-size: cover;
+  transition: transform .2s; /* Animation */
 }
 
 .info {
@@ -54,9 +55,15 @@
   transition: transform 0.5s ease-out;
 }
 
+/*
 .card:hover .info,
 .card:hover .info:before {
   transform: translateY(0) translateZ(0);
+}
+*/
+
+.card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .title {

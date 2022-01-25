@@ -2161,7 +2161,7 @@ sup, sub { line-height: 0; }
 
 body { font-family: Helvetica; background-color: #FFFFFF; }
 
-h1 { color: #063D55; }
+h1 { color: #49BCF4; }
 
 /* 1a222c */
 @-webkit-keyframes pulse { from { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -2192,7 +2192,7 @@ h1 { color: #063D55; }
     opacity: .4;
     top: 0; } }
 
-#particles-js { background: #063D55; display: flex; vertical-align: bottom; min-height: 100vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+#particles-js { background: #49BCF4; display: flex; vertical-align: bottom; min-height: 100vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 
 #particles-js .particles-js-canvas-el { height: 100vh !important; }
 
@@ -2218,9 +2218,9 @@ h1 { color: #063D55; }
 
 .header-icons .icon { text-align: center; color: #FFF; width: 20px; height: 20px; font-size: 20px; padding: 10px; margin: 5px; border-radius: 50%; border: 2px solid #FFF; transition: all .5s; }
 
-.header-icons .icon:hover { color: #063D55; background: #FFF; }
+.header-icons .icon:hover { color: #49BCF4; background: #FFF; }
 
-.header-icons .icon:active { color: #063D55; background: #FFF; }
+.header-icons .icon:active { color: #49BCF4; background: #FFF; }
 
 @media only screen and (min-width: 768px) { .header-icons .icon { width: 30px; height: 30px; font-size: 30px; line-height: 30px; } }
 
@@ -2244,7 +2244,7 @@ h1 { color: #063D55; }
 
 @media only screen and (min-width: 768px) { .user { flex-wrap: nowrap; font-size: 75px; } }
 
-.pfp { margin: auto 50px auto auto; width: auto; height: 500px; border-radius: 25px; }
+.pfp { margin: auto 50px auto auto; width: auto; height: 500px; border-radius: 50%; }
 
 .row_about { display: flex; padding-top: 80px; flex-direction: row; }
 
@@ -2256,7 +2256,7 @@ h1 { color: #063D55; }
 
 .button:hover span { padding-right: 25px; }
 
-.button:hover { background-color: #063D55; }
+.button:hover { background-color: #49BCF4; }
 
 .button:hover span:after { opacity: 1; right: 0; }
 
@@ -2300,7 +2300,7 @@ h1 { color: #063D55; }
 .navbar a:hover { color: #555555; }
 
 /* Current/active navbar link */
-.active { background-color: #063D55; }
+.active { background-color: #49BCF4; }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) { .navbar a { float: none; display: block; } }
@@ -2311,13 +2311,14 @@ h1 { color: #063D55; }
 
 .column_project { margin: 0 40px 40px 40px; max-width: 100%; }
 
-.card { border-radius: 20px; margin: 0 auto; width: 400px; height: 550px; box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12); overflow: hidden; background-size: cover; }
+.card { border-radius: 20px; margin: 0 auto; width: 400px; height: 550px; box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12); overflow: hidden; background-size: cover; transition: transform .2s; /* Animation */ }
 
 .info { width: 100%; height: 550px; background-color: #fff; border-radius: 20px; transform: translateY(100%) translateY(0px) translateZ(0); transition: transform 0.5s ease-out; }
 
 .info:before { z-index: -1; display: block; position: absolute; content: ' '; width: 100%; height: 100%; overflow: hidden; filter: blur(20px); background: #CDCDCD; background-size: cover; opacity: 0.25; transform: translateY(-100%) translateY(88px) translateZ(0); transition: transform 0.5s ease-out; }
 
-.card:hover .info, .card:hover .info:before { transform: translateY(0) translateZ(0); }
+/* .card:hover .info, .card:hover .info:before { transform: translateY(0) translateZ(0); } */
+.card:hover { transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
 
 .title { text-align: center; margin: 0; padding: 24px; font-size: 40px; line-height: 1; color: rgba(0, 0, 0, 0.87); }
 
@@ -2327,7 +2328,7 @@ h1 { color: #063D55; }
 
 @media screen and (max-width: 1400px) { .row_project { width: 100%; margin-bottom: 20px; flex-direction: column; } .column_project { margin: 40px 0 0 0; justify-content: center; text-align: center; } }
 
-.img_card { display: flex; margin: 70px auto; width: 100%; height: auto; border-radius: 25px; box-shadow: 0px 3px 5px -1px; }
+.img_card { display: flex; margin: 70px auto; width: 80%; height: auto; border-radius: 25px; box-shadow: 0px 3px 5px -1px; }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea { width: 100%; /* Full width */ padding: 12px; /* Some padding */ border: 1px solid #ccc; /* Gray border */ border-radius: 4px; /* Rounded borders */ box-sizing: border-box; /* Make sure that padding and width stays in place */ margin-top: 6px; /* Add a top margin */ margin-bottom: 16px; /* Bottom margin */ resize: vertical; }
@@ -2335,7 +2336,7 @@ input[type=text], select, textarea { width: 100%; /* Full width */ padding: 12px
 /* Style the submit button with a specific background color etc */
 input[type=submit] { border-radius: 20px; background-color: #555; border: none; color: #FFFFFF; font-size: 20px; padding: 15px; max-width: 200px; width: 100%; transition: all 0.5s; cursor: pointer; justify-content: center; text-align: center; }
 
-input[type=submit]:hover { background-color: #063D55; }
+input[type=submit]:hover { background-color: #49BCF4; }
 
 /* Add a background color and some padding around the form */
 .container { padding-bottom: 60px; border-radius: 20px; background-color: #FFFFFF; margin: 0 auto 0 auto; max-width: 1000px; width: 100%; }
