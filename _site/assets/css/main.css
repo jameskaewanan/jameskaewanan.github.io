@@ -2161,7 +2161,7 @@ sup, sub { line-height: 0; }
 
 body { font-family: Helvetica; background-color: #FFFFFF; }
 
-h1 { color: #49BCF4; }
+h1 { color: #329CD0; }
 
 /* 1a222c */
 @-webkit-keyframes pulse { from { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -2192,7 +2192,7 @@ h1 { color: #49BCF4; }
     opacity: .4;
     top: 0; } }
 
-#particles-js { background: #49BCF4; display: flex; vertical-align: bottom; min-height: 100vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+#particles-js { background: #329CD0; display: flex; vertical-align: bottom; min-height: 100vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 
 #particles-js .particles-js-canvas-el { height: 100vh !important; }
 
@@ -2218,9 +2218,9 @@ h1 { color: #49BCF4; }
 
 .header-icons .icon { text-align: center; color: #FFF; width: 20px; height: 20px; font-size: 20px; padding: 10px; margin: 5px; border-radius: 50%; border: 2px solid #FFF; transition: all .5s; }
 
-.header-icons .icon:hover { color: #49BCF4; background: #FFF; }
+.header-icons .icon:hover { color: #329CD0; background: #FFF; }
 
-.header-icons .icon:active { color: #49BCF4; background: #FFF; }
+.header-icons .icon:active { color: #329CD0; background: #FFF; }
 
 @media only screen and (min-width: 768px) { .header-icons .icon { width: 30px; height: 30px; font-size: 30px; line-height: 30px; } }
 
@@ -2256,7 +2256,7 @@ h1 { color: #49BCF4; }
 
 .button:hover span { padding-right: 25px; }
 
-.button:hover { background-color: #49BCF4; }
+.button:hover { background-color: #329CD0; }
 
 .button:hover span:after { opacity: 1; right: 0; }
 
@@ -2300,7 +2300,7 @@ h1 { color: #49BCF4; }
 .navbar a:hover { color: #555555; }
 
 /* Current/active navbar link */
-.active { background-color: #49BCF4; }
+.active { background-color: #329CD0; }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) { .navbar a { float: none; display: block; } }
@@ -2336,7 +2336,7 @@ input[type=text], select, textarea { width: 100%; /* Full width */ padding: 12px
 /* Style the submit button with a specific background color etc */
 input[type=submit] { border-radius: 20px; background-color: #555; border: none; color: #FFFFFF; font-size: 20px; padding: 15px; max-width: 200px; width: 100%; transition: all 0.5s; cursor: pointer; justify-content: center; text-align: center; }
 
-input[type=submit]:hover { background-color: #49BCF4; }
+input[type=submit]:hover { background-color: #329CD0; }
 
 /* Add a background color and some padding around the form */
 .container { padding-bottom: 60px; border-radius: 20px; background-color: #FFFFFF; margin: 0 auto 0 auto; max-width: 1000px; width: 100%; }
@@ -2354,5 +2354,22 @@ input[type=submit]:hover { background-color: #49BCF4; }
 .column_contact_right { width: 50%; padding-left: 30px; }
 
 @media (max-width: 800px) { .row_contact { flex-direction: column; } .column_contact_left, .column_contact_right { width: 100%; padding: 0; } }
+
+/* Float four columns side by side */
+.column_skills { float: left; width: 25%; padding: 0 10px; box-sizing: border-box; }
+
+/* Remove extra left and right margins, due to padding in columns */
+.row_skills { margin: 80px 40px; }
+
+/* Clear floats after the columns */
+.row_skills:after { content: ""; display: table; clear: both; }
+
+/* Style the counter cards */
+.card_skills { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */ padding: 16px; border-radius: 20px; width: 320px; height: 350px; text-align: center; background-color: #ffffff; box-sizing: border-box; transition: transform .2s; /* Animation */ }
+
+.card_skills:hover { transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) { .column_skills { width: 100%; display: block; margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

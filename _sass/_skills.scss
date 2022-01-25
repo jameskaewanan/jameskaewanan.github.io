@@ -1,0 +1,45 @@
+/* Float four columns side by side */
+.column_skills {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row_skills {
+  margin: 80px 40px;
+}
+
+/* Clear floats after the columns */
+.row_skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card_skills {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  border-radius: 20px;
+  width: 320px;
+  height: 350px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: transform .2s; /* Animation */
+}
+
+.card_skills:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column_skills {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
