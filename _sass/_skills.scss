@@ -1,14 +1,15 @@
 /* Float four columns side by side */
 .column_skills {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  box-sizing: border-box;
+  margin: 80px 10px 40px;
+  max-width: 100%;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
 .row_skills {
-  margin: 80px 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 0;
+  flex-direction: row;
 }
 
 /* Clear floats after the columns */
